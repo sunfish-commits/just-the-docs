@@ -1,7 +1,7 @@
 ---
 title: Buttons
 parent: 01장 카티아 소개 및 환경 설정
-nav_order: 2
+nav_order: 9
 ---
 
 # Buttons

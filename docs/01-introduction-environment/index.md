@@ -1,5 +1,5 @@
 ---
-title: 01장 카티아 소개 및 환경 설정
+title: 01장 카티아 소개 및 기본 설정
 nav_order: 1
 has_children: true
 ---
