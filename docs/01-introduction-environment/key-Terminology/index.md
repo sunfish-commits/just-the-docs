@@ -1,7 +1,7 @@
 ---
 title: 핵심 용어 정리
 parent: 01장 카티아 소개 및 기본 설정
-nav_order: 1
+nav_order: 2
 has_children: true
 ---
 
