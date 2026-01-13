@@ -1,10 +1,10 @@
 ---
-title: Typography
-parent: 01장 카티아 소개 및 환경 설정
+title: 타이포그래피
+ parent: 01장 카티아 소개 및 설정
 nav_order: 10
 ---
 
-# Typography
+# 타이포그래피
 {: .no_toc }
 
 ## Table of contents
@@ -15,9 +15,9 @@ nav_order: 10
 
 ---
 
-## Font stack
+## 기본 글꼴
 
-By default, Just the Docs uses a native system font stack for sans-serif fonts:
+Just the Docs는 기본적으로 Sans-serif 글꼴을 연 시스템 글꼴을 사용합니다:
 
 ```scss
 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji"
@@ -27,7 +27,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz
 {: .fs-5 .ls-10 .code-example }
 
-For monospace type, like code snippets or the `<pre>` element, Just the Docs uses a native system font stack for monospace fonts:
+코드 스니팏낳이나 `<pre>` 엔리먼트 같은 모노스페이스 글꼴의 경우, Just the Docs는 시스템 글꼴 스택을 사용합니다:
 
 ```scss
 "SFMono-Regular", Menlo, Consolas, Monospace
@@ -39,9 +39,9 @@ abcdefghijklmnopqrstuvwxyz
 
 ---
 
-## Responsive type scale
+## 반응형 글쓤 및 크기
 
-Just the Docs uses a responsive type scale that shifts depending on the viewport size.
+Just the Docs는 뷰포트 크기에 따라 모양이 바뀌는 반응형 글쓤 및 크기를 사용합니다.
 
 | Selector              | Small screen size `font-size`    | Large screen size `font-size` |
 |:----------------------|:---------------------------------|:------------------------------|
@@ -55,9 +55,9 @@ Just the Docs uses a responsive type scale that shifts depending on the viewport
 
 ---
 
-## Headings
+## 제목
 
-Headings are rendered like this:
+제목은 다음과 같이 렌더링됩니다:
 
 <div class="code-example">
 <h1>Heading 1</h1>
@@ -78,9 +78,9 @@ Headings are rendered like this:
 
 ---
 
-## Body text
+## 본문 텍스트
 
-Default body text is rendered like this:
+기본 본문 텍스트는 다음과 같이 렌더링됩니다:
 
 <div class="code-example" markdown="1">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -91,7 +91,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ---
 
-## Inline elements
+## 인라인 요소
 
 <div class="code-example" markdown="1">
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -106,8 +106,8 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 ---
 
-## Typographic Utilities
+## 타이포그래피 유틸리티
 
-There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization.
+글꼴 크기, 글쓤 두께, 줄 높이 및 대문자로 기본 스타일을 덧지는 CSS 클래스가 있습니다.
 
-[View typography utilities]({% link docs/utilities/typography.md %}){: .btn .btn-outline }
+[타이포그래피 유틸리티 보기]({% link docs/utilities/typography.md %}){: .btn .btn-outline }
