@@ -3,7 +3,7 @@ layout: null
 ---
 (function (jtd, undefined) {
 
-// Event handling
+// 이벤트 처리
 
 jtd.addEvent = function(el, type, handler) {
   if (el.attachEvent) el.attachEvent('on'+type, handler); else el.addEventListener(type, handler);
@@ -12,9 +12,9 @@ jtd.removeEvent = function(el, type, handler) {
   if (el.detachEvent) el.detachEvent('on'+type, handler); else el.removeEventListener(type, handler);
 }
 jtd.onReady = function(ready) {
-  // in case the document is already rendered
+  // 먼저 렌더된 문서인 경우
   if (document.readyState!='loading') ready();
-  // modern browsers
+  // 최신 브라우저
   else if (document.addEventListener) document.addEventListener('DOMContentLoaded', ready);
   // IE <= 8
   else document.attachEvent('onreadystatechange', function(){
@@ -22,7 +22,7 @@ jtd.onReady = function(ready) {
   });
 }
 
-// Show/hide mobile menu
+// 모바일 메뉴 표시/숨기기
 
 function initNav() {
   jtd.addEvent(document, 'click', function(e){
@@ -69,13 +69,13 @@ function initNav() {
   {%- endif %}
 }
 
-// The <head> element is assumed to include the following stylesheets:
-// - a <link> to /assets/css/just-the-docs-head-nav.css,
-//             with id 'jtd-head-nav-stylesheet'
-// - a <style> containing the result of _includes/css/activation.scss.liquid.
-// To avoid relying on the order of stylesheets (which can change with HTML
-// compression, user-added JavaScript, and other side effects), stylesheets
-// are only interacted with via ID
+// <head> 요소는 다음 스타일시트를 포함하는 것으로 가정합니다:
+// - /assets/css/just-the-docs-head-nav.css로 향하는 <link>
+//             id는 'jtd-head-nav-stylesheet'입니다
+// - _includes/css/activation.scss.liquid 결과를 포함하는 <style>
+// HTML 압축, 사용자 추가 JavaScript 및 기타 부작용으로
+// 스타일시트 순서가 변경될 수 있으므로 이를 피하려면
+// 스타일시트는 ID를 통해서만 상호작용합니다
 
 function disableHeadStyleSheets() {
   const headNav = document.getElementById('jtd-head-nav-stylesheet');
@@ -90,7 +90,7 @@ function disableHeadStyleSheets() {
 }
 
 {%- if site.search_enabled != false %}
-// Site search
+// 사이트 검색
 
 function initSearch() {
   var request = new XMLHttpRequest();
@@ -147,7 +147,7 @@ function searchLoaded(index, docs) {
   var currentSearchIndex = 0;
 
   {%- if site.search.focus_shortcut_key %}
-  // add event listener on ctrl + <focus_shortcut_key> for showing the search input
+  // ctrl + <포커스_단축키>로 검색 입력 표시를 위한 이벤트 리스너 추가
   jtd.addEvent(document, 'keydown', function (e) {
     if ((e.ctrlKey || e.metaKey) && e.key === '{{ site.search.focus_shortcut_key }}') {
       e.preventDefault();
@@ -174,7 +174,7 @@ function searchLoaded(index, docs) {
       hideSearch();
     } else {
       showSearch();
-      // scroll search input into view, workaround for iOS Safari
+      // iOS Safari를 위한 검색 입력 뷰로 스크롤, 해결 방법
       window.scroll(0, -1);
       setTimeout(function(){ window.scroll(0, 0); }, 0);
     }
@@ -255,7 +255,7 @@ function searchLoaded(index, docs) {
       resultTitle.classList.add('search-result-title');
       resultLink.appendChild(resultTitle);
 
-      // note: the SVG svg-doc is only loaded as a Jekyll include if site.search_enabled is true; see _includes/icons/icons.html
+      // note: site.search_enabled가 true인 경우에만 SVG svg-doc가 Jekyll include로 로드됩니다; _includes/icons/icons.html 참조
       var resultDoc = document.createElement('div');
       resultDoc.classList.add('search-result-doc');
       resultDoc.innerHTML = '<svg viewBox="0 0 24 24" class="search-result-icon" aria-hidden="true"><use xlink:href="#svg-doc"></use></svg>';
@@ -420,7 +420,7 @@ function searchLoaded(index, docs) {
 
   jtd.addEvent(searchInput, 'keyup', function(e){
     switch (e.keyCode) {
-      case 27: // When esc key is pressed, hide the results and clear the field
+      case 27: // esc 키를 누르면 결과를 숨기고 필드를 지웁니다
         searchInput.value = '';
         break;
       case 38: // arrow up
@@ -484,7 +484,7 @@ function searchLoaded(index, docs) {
 }
 {%- endif %}
 
-// Switch theme
+// 테마 전환
 
 jtd.getTheme = function() {
   var cssFileHref = document.querySelector('[rel="stylesheet"]').getAttribute('href');
@@ -496,8 +496,8 @@ jtd.setTheme = function(theme) {
   cssFile.setAttribute('href', '{{ "assets/css/just-the-docs-" | relative_url }}' + theme + '.css');
 }
 
-// Note: pathname can have a trailing slash on a local jekyll server
-// and not have the slash on GitHub Pages
+// 주의: 경로명은 로컬 jekyll 서버에서 끝수레슬래시를 가질 수 있다
+// 그리고 GitHub Pages에서는 슬래시가 없을 수 있습니다.
 
 function navLink() {
   var pathname = document.location.pathname;
@@ -507,8 +507,8 @@ function navLink() {
     return navLink;
   }
 
-  // The `permalink` setting may produce navigation links whose `href` ends with `/` or `.html`.
-  // To find these links when `/` is omitted from or added to pathname, or `.html` is omitted:
+  // The `permalink` 설정은 끝이 `/` 또는 `.html`로 끝나는 네비게이션 링크를 생성할 수 있습니다.
+  // 경로명에서 `/`가 생략되거나 추가되거나 `.html`이 생략될 때 이러한 링크를 찾으려면:
 
   if (pathname.endsWith('/') && pathname != '/') {
     pathname = pathname.slice(0, -1);
@@ -521,10 +521,10 @@ function navLink() {
     }
   }
 
-  return null; // avoids `undefined`
+  return null; // `undefined` 방지
 }
 
-// Scroll site-nav to ensure the link to the current page is visible
+// 현재 페이지로의 링크를 확인하도록 site-nav 스크롤
 
 function scrollNav() {
   const targetLink = navLink();
@@ -534,8 +534,8 @@ function scrollNav() {
   }
 }
 
-// Find the nav-list-link that refers to the current page
-// then make it and all enclosing nav-list-item elements active.
+// 현재 페이지를 나타내는 nav-list-link 찾기
+// 그 다음 현재 페이지를 나타내는 모든 둘러싼 nav-list-item 요소를 활성화합니다.
 
 function activateNav() {
   var target = navLink();
@@ -553,7 +553,7 @@ function activateNav() {
   }
 }
 
-// Document ready
+// 문서 준비
 
 jtd.onReady(function(){
   if (document.getElementById('site-nav')) {
@@ -566,9 +566,9 @@ jtd.onReady(function(){
   {%- endif %}
 });
 
-// Accessibility: set tabindex=0 on each code highlight block, so screenreaders
-// can focus over (particularly important if there's horizontal scroll)
-// see: https://dequeuniversity.com/rules/axe/4.9/scrollable-region-focusable?application=axeAPI
+// 접근성: 각 코드 강조 블록에 tabindex=0을 설정하여 스크린리더가
+// 포커스할 수 있도록 합니다 (특히 수평 스크롤이 있는 경우 중요함)
+// 참조: https://dequeuniversity.com/rules/axe/4.9/scrollable-region-focusable?application=axeAPI
 
 jtd.onReady(() => {
   document
@@ -576,7 +576,7 @@ jtd.onReady(() => {
     .forEach(codeBlock => codeBlock.setAttribute("tabindex", "0"));
 });
 
-// Copy button on code
+// 코드의 복사 버튼
 
 {%- if site.enable_copy_code_button != false %}
 
@@ -589,7 +589,7 @@ jtd.onReady(function(){
 
   var codeBlocks = document.querySelectorAll('div.highlighter-rouge, div.listingblock > div.content, figure.highlight');
 
-  // note: the SVG svg-copied and svg-copy is only loaded as a Jekyll include if site.enable_copy_code_button is true; see _includes/icons/icons.html
+  // note: site.enable_copy_code_button가 true인 경우에만 SVG svg-copied 및 svg-copy가 Jekyll include로 로드됩니다; _includes/icons/icons.html 참조
   var svgCopied =  '<svg viewBox="0 0 24 24" class="copy-icon"><use xlink:href="#svg-copied"></use></svg>';
   var svgCopy =  '<svg viewBox="0 0 24 24" class="copy-icon"><use xlink:href="#svg-copy"></use></svg>';
 

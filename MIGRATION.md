@@ -482,9 +482,9 @@ For changes since v0.3.3, the log usually references the merged PR that made the
 - Aria-labels: improved `aria-label`s have been added to various site elements. PRs: [#950], ...
 - Other general improvements: gradual changes have improved tab focusability, contrast, and semantic elements. More work still to come. PRs: [#498], [#846]
 
-#### Configuration
+-#### Configuration
 
-- Mermaid support: first-class support for [Mermaid](https://mermaid.js.org/) - a JavaScript-based diagram and charting tool supported by GitHub - has been added to the theme. **This feature is opt-in.** See the new doc subsections in [Configuration]({% link docs/configuration.md %}#mermaid-diagrams) and [Code]({% link docs/ui-components/code/index.md %}#mermaid-diagram-code-blocks) for more.
+- Mermaid support: first-class support for [Mermaid](https://mermaid.js.org/) - a JavaScript-based diagram and charting tool supported by GitHub - has been added to the theme. **This feature is opt-in.** See the new doc subsections in [Configuration]({% link docs/configuration.md %}#mermaid-diagrams) and Code (docs/ui-components/code/index.md) for more.
 - Multiple Google Analytics tags are now supported. PR: [#1029]
 
 #### Customization
@@ -494,7 +494,7 @@ For changes since v0.3.3, the log usually references the merged PR that made the
 
 #### Custom Includes
 
-We've added several custom `_includes` to provide users with more customization options for different site elements. We've also added a section to [Configuration]({% link docs/customization.md %}#override-includes) to outline these.
+We've added several custom `_includes` to provide users with more customization options for different site elements. We've also added a section to Configuration (docs/customization.md#override-includes) to outline these.
 
 All of these are opt-in by default; however, **these may be breaking if you have existing `_includes` with the same name**.
 
@@ -512,7 +512,7 @@ In a future (version 1) release, we may rename the custom include files.
 
 We've broken up the default layout (`_layouts/default.html`) into multiple reusable components. This should have no impact on most users; however, it should make it easier to implement custom layouts.
 
-For more, see [Custom layouts and includes]({% link docs/customization.md %}#custom-layouts-and-includes). PR: [#1058].
+For more, see Custom layouts and includes (docs/customization.md#custom-layouts-and-includes). PR: [#1058].
 
 #### Navigation
 

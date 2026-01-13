@@ -4,16 +4,15 @@ parent: 핵심 용어 정리
 nav_order: 1
 ---
 
-# Feature
+### Feature
 
-CATIA에서 **Feature**는 형상을 생성하거나 수정하는  
-기본 단위 요소를 의미합니다.
+Feature는 부품을 구성하기 위해 사용하는 기하학적 요소를 의미합니다.
 
-> ※ 본 문서는 좌측 네비게이션 구조 테스트용 샘플입니다.  
-> 내용은 이후 교육 과정에 맞게 업데이트됩니다. 테스트
+예: Pad, Pocket, Hole, Rib, Fillet, Chamfer 등
 
+이러한 Feature들은 모델의 형태를 단계적으로 생성하는 핵심 요소입니다.
 
-
+![feature_001]({{site.url}}/images/feature/feature_001.png)
 
 
 

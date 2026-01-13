@@ -1,11 +1,11 @@
 namespace :search do
-  desc 'Generate the files needed for search functionality'
+  desc '검색 기능에 필요한 파일 생성'
   task :init do
-    puts 'Creating search data json file...'
+    puts '검색 데이터 json 파일 생성 중...'
     mkdir_p 'assets/js'
     touch 'assets/js/zzzz-search-data.json'
-    puts 'Done.'
-    puts 'Generating content...'
+    puts '완료.'
+    puts '콘텐츠 생성 중...'
 
     File.open('assets/js/zzzz-search-data.json', 'w') do |f|
       f.puts '---

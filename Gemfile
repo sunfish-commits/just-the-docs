@@ -12,13 +12,13 @@ gem "jekyll-sitemap", group: :jekyll_plugins
 group :development, :test do
   gem "html-proofer", "~> 5.2"
 
-  # Test Infrastructure
+  # 테스트 인존성
   gem 'rack'
   gem 'rackup'
   gem 'rspec'
   gem 'webrick'
 
-  # Frontend a11y tests
+  # 낹 접낱성 테스트
   gem 'axe-core-capybara'
   gem 'axe-core-rspec'
   gem 'capybara'

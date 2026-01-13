@@ -1,41 +1,30 @@
 {%- comment -%}
-This file was previously used to "fix" the HTML produced by Jekyll for
-highlighted code with line numbers. While it often resolves layout issues
-from the missing HTML tags, it still generates invalid HTML (by placing
-a `<table>` element within a `<code>` block). As such, we no longer
-recommend using this workaround. For more information, see the
-"Code snippets with line numbers" docs page:
+이 파일은 이전에 줄 번호가 있는 강조된 코드에 대해 Jekyll에서 생성된 HTML을 "수정"하는 데 사용되었습니다. 누락된 HTML 태그로 인한 레이아웃 문제를 해결하는 경우가 많지만 여전히 잘못된 HTML을 생성합니다(`<code>` 블록 내에 `<table>` 요소를 배치). 따라서 더 이상 이 해결 방법을 권장하지 않습니다. 자세한 내용은 "줄 번호가 있는 코드 스니펫" 문서 페이지를 참조하세요:
 https://just-the-docs.com/docs/ui-components/code/line-numbers/
-(or, docs/ui-components/line-nos.md/)
+(또는 docs/ui-components/line-nos.md/)
 
-The next portion of this file, including the comments and the workaround,
-are preserved for backwards comptability.
+이 파일의 다음 부분은 주석과 해결 방법을 포함하여 역호환성을 위해 유지됩니다.
 
-ACKNOWLEDGEMENTS
+감사의 말
 
-The implementation was derived from the workaround provided by
+구현은 다음에서 제공한 해결 방법에서 파생되었습니다:
 Dmitry Hrabrov (DeXP) at
 https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
 
-EXPLANATION (OLD)
+설명 (구)
 
-The HTML produced by Rouge highlighting with line numbers is of the form
-`code table`. Jekyll always wraps the highlighted HTML
-with `pre`. This wrapping is not only unnecessary, but also transforms
-the conforming HTML produced by Rouge to non-conforming HTML, which
-results in HTML validation error reports.
+줄 번호가 있는 Rouge 강조가 생성한 HTML의 형식은 `code table`입니다. Jekyll은 항상 강조된 HTML을 `pre`로 감싸줍니다. 이 래핑은 불필요할 뿐만 아니라 Rouge가 생성한 정합한 HTML을 부정합한 HTML로 변환하여 HTML 검증 오류 보고서가 발생합니다.
 
-The fix removes the outer `pre` tags whenever they contain the pattern
-`<table class="rouge-table">`.
+수정은 패턴 `<table class="rouge-table">`를 포함할 때마다 바깥쪽 `pre` 태그를 제거합니다.
 
-Apart from avoiding HTML validation errors, the fix allows the use of
-the [Jekyll layout for compressing HTML](http://jch.penibelst.de),
-which relies on `pre` tags not being nested, according to
+HTML 검증 오류를 방지하는 것 외에도 수정으로 인해 `pre` 태그가 중첩되지 않는 것에 따라 [HTML을 압축하는 Jekyll 레이아웃](http://jch.penibelst.de)을 사용할 수 있습니다. 참조:
 https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-172069842
 
-USAGE
+사용법
 
-(Any names can be used for `some_var` and `some_language`.)
+(모든 이름은 `some_var` 및 `some_language`에 사용할 수 있습니다.)
+
+{%- endcomment -%}
 
 {% capture some_var %}
 {% highlight some_language linenos %}

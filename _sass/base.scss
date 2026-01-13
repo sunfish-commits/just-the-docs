@@ -1,4 +1,4 @@
-// Base element style overrides
+// 기본 스타일 짱Γ감 재정쓰니다
 // stylelint-disable selector-no-type, selector-max-type, selector-max-specificity, selector-max-id
 
 :root {
@@ -101,11 +101,11 @@ hr {
   border: 0;
 }
 
-// adds a GitHub-style sidebar to blockquotes
+// GitHub 스타일의 젬닄바를 추가합니다
 blockquote {
   margin: 10px 0;
 
-  // resets user-agent stylesheets for blockquotes
+  // blockquote를 리셋합니다
   margin-block-start: 0;
   margin-inline-start: 0;
   padding-left: 1rem;

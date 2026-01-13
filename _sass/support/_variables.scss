@@ -1,7 +1,8 @@
-// Typography
+// 타이포그래피
 
 // prettier-ignore
-$body-font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
+$body-font-family: 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo',
+  system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
   roboto, "Helvetica Neue", arial, sans-serif, "Segoe UI Emoji" !default;
 $mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
 $root-font-size: 16px !default; // DEPRECATED: previously base font-size for rems
@@ -9,7 +10,7 @@ $body-line-height: 1.4 !default;
 $content-line-height: 1.6 !default;
 $body-heading-line-height: 1.25 !default;
 
-// Font size
+// 폰트 크기
 // `-sm` suffix is the size at the small (and above) media query
 
 $font-size-1: 0.5625rem !default;

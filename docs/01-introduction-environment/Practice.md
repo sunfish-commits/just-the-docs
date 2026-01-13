@@ -1,10 +1,10 @@
 ---
-title: 소개
-parent: 01장 카티아 소개 및 설정
-nav_order: 1
+title: 실습
+parent: 1장 카티아 소개
+nav_order: 6
 ---
 
-# 소개
+# 실습
 
 이 장은 CATIA 교육 과정의 첫 단계로,  
 **CATIA를 처음 접하는 사용자를 위한 기본적인 이해를 목표**로 합니다.

@@ -1,6 +1,6 @@
-// Utility classes for layout
+// 레이아웃 지원 유틸리티 클래스
 
-// Display
+// 디스플레이
 
 .d-block {
   display: block !important;
@@ -22,7 +22,7 @@
   display: none !important;
 }
 
-// Screenreader-only
+// 스크린리더 전용
 
 .sr-only {
   position: absolute;

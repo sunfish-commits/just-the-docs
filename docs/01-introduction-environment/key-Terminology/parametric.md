@@ -1,19 +1,17 @@
 ---
-title: parametric
+title: Parametric
 parent: 핵심 용어 정리
 nav_order: 4
 ---
 
-# parametric
+### Parametric
 
-CATIA에서 **parametric**는 형상을 생성하거나 수정하는  
-기본 단위 요소를 의미합니다.
+Feature는 제어 가능한 Dimension(치수)과 Relation(관계)을 가지고 있으며, 이러한 요소를 Parameter라고 합니다.
 
-> ※ 본 문서는 좌측 네비게이션 구조 테스트용 샘플입니다.  
-> 내용은 이후 교육 과정에 맞게 업데이트됩니다. 테스트
+Parameter를 활용하면 설계 의도를 반영하여 모델링을 쉽고 빠르게 제어할 수 있습니다.
 
-
+Parameter는 Dimension과 Relation으로 구성됩니다.
 
 
 
-
+![parametric_001]({{site.url}}/images/parametric/parametric_001.png)

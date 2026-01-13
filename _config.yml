@@ -1,35 +1,36 @@
-# Welcome to Jekyll!
+# Jekyll에 오신 것을 환영합니다!
 #
-# This config file is meant for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# 이 설정 파일은 전체 사이트에 영향을 미치는 설정을 위해 사용됩니다.
+# 일반적으로 한 번 설정한 후에는 거의 편집하지 않습니다.
+# 이 파일을 자주 편집해야 한다면 Jekyll의 데이터 파일
+# 기능을 사용하는 것을 고려하세요.
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# 기술적인 이유로 'jekyll serve' 사용 중에는
+# 이 파일이 자동으로 다시 로드되지 않습니다. 파일을 변경하면 서버를 다시 시작하세요.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# 사이트 설정
+# 이 설정은 새 사이트를 개인화하는 데 사용됩니다. HTML 파일을 보면
+# {{ site.title }}, {{ site.github_repo }} 등으로 접근할 수 있습니다.
+# 원하는 모든 커스텀 변수를 만들 수 있으며, 템플릿에서
+# {{ site.myvariable }}을 통해 접근할 수 있습니다.
+lang: en-US
 title: Just the Docs
 description: A Jekyll theme for documentation
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://just-the-docs.com" # the base hostname & protocol for your site, e.g. http://example.com
-repository: just-the-docs/just-the-docs # for github-metadata
+baseurl: "" # 사이트의 서브경로, 예: /blog
+url: "https://just-the-docs.com" # 사이트의 기본 호스트명 및 프로토콜, 예: http://example.com
+repository: just-the-docs/just-the-docs # github-metadata용
 
 permalink: pretty
 
 defaults:
   - scope:
-      path: "docs" # an empty string here means all files in the project
+      path: "docs" # 빈 문자열은 프로젝트의 모든 파일을 의미합니다
       type: "pages"
     values:
       layout: "default"
 
 exclude:
-  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+  # Jekyll 기본 _config.yml에서:
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
@@ -40,7 +41,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  # specific to the theme website:
+  # 테마 웹사이트 전용:
   - bin/
   - lib/
   - "*.gemspec"
@@ -53,118 +54,119 @@ exclude:
   - CODE_OF_CONDUCT.md
   - docker-compose.yml
   - Dockerfile
-  # theme test code
+  # 테마 테스트 코드
   - fixtures/
   - spec/
   - tmp
   - .rspec
 
-# Set a path/url to a logo that will be displayed instead of the title
+# 제목 대신 표시할 로고의 경로/URL을 설정합니다
 #logo: "/assets/images/just-the-docs.png"
 
-# Enable or disable the site search
-# Supports true (default) or false
+# 사이트 검색 활성화 또는 비활성화
+# true(기본값) 또는 false를 지원합니다
 search_enabled: true
 search:
-  # Split pages into sections that can be searched individually
-  # Supports 1 - 6, default: 2
+  # 페이지를 개별적으로 검색할 수 있는 섹션으로 분할합니다
+  # 1 - 6을 지원하며, 기본값: 2
   heading_level: 2
-  # Maximum amount of previews per search result
-  # Default: 3
+  # 검색 결과당 최대 미리보기 수
+  # 기본값: 3
   previews: 2
-  # Maximum amount of words to display before a matched word in the preview
-  # Default: 5
+  # 일치하는 단어 전에 표시할 최대 단어 수
+  # 기본값: 5
   preview_words_before: 3
-  # Maximum amount of words to display after a matched word in the preview
-  # Default: 10
+  # 일치하는 단어 후에 표시할 최대 단어 수
+  # 기본값: 10
   preview_words_after: 3
-  # Set the search token separator
-  # Default: /[\s\-/]+/
-  # Example: enable support for hyphenated search words
+  # 검색 토큰 구분자 설정
+  # 기본값: /[\s\-/]+/
+  # 예: 하이픈 검색어 지원 활성화
   tokenizer_separator: /[\s/]+/
-  # Display the relative url in search results
-  # Supports true (default) or false
+  # 검색 결과에 상대 URL 표시
+  # true(기본값) 또는 false를 지원합니다
   rel_url: true
-  # Enable or disable the search button that appears in the bottom right corner of every page
-  # Supports true or false (default)
+  # 모든 페이지의 오른쪽 하단에 나타나는 검색 버튼 활성화 또는 비활성화
+  # true 또는 false(기본값)를 지원합니다
   button: false
-  # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
+  # `ctrl + focus_shortcut_key` (macOS에서는 `cmd + focus_shortcut_key`)를 눌러 검색 입력에 포커스합니다
   focus_shortcut_key: "k"
 
-# For copy button on code
+# 코드 복사 버튼 활성화
 enable_copy_code_button: true
 
-# By default, consuming the theme as a gem leaves mermaid disabled; it is opt-in
+# 기본적으로 테마를 gem으로 사용하면 mermaid가 비활성화됩니다. 선택적으로 활성화됩니다
 mermaid:
-  # Version of mermaid library
-  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  # Mermaid 라이브러리 버전
+  # https://cdn.jsdelivr.net/npm/mermaid/에서 사용 가능한 버전을 선택하세요
   version: "9.1.6"
-  # Put any additional configuration, such as setting the theme, in _includes/mermaid_config.js
-  # See also docs/ui-components/code
-  # To load mermaid from a local library, also use the `path` key to specify the location of the library; e.g.
-  # for (v10+):
+  # 테마 설정과 같은 추가 구성을 _includes/mermaid_config.js에 넣으세요
+  # docs/ui-components/code도 참고하세요
+  # 로컬 라이브러리에서 mermaid를 로드하려면 라이브러리 위치를 지정하는 `path` 키도 사용하세요. 예:
+  # (v10+의 경우):
   # path: "/assets/js/mermaid.esm.min.mjs"
-  # for (<v10):
+  # (<v10의 경우):
   # path: "/assets/js/mermaid.min.js"
-  # Note: copy both `mermaid.esm.min.mjs` (v10+) or `mermaid.min.js` (<v10) and the associated `.map` file from the specified version of `mermaid/dist` to `/assets/js/`.
+  # 참고: mermaid/dist의 지정된 버전에서 `mermaid.esm.min.mjs` (v10+) 또는 `mermaid.min.js` (<v10)와
+  # 관련 `.map` 파일을 `/assets/js/`에 복사하세요.
 
-# Enable or disable heading anchors
+# 제목 앵커 활성화 또는 비활성화
 heading_anchors: true
 
-# Aux links for the upper right navigation
+# 오른쪽 상단 네비게이션용 보조 링크
 aux_links:
   "Just the Docs on GitHub":
     - "https://github.com/just-the-docs/just-the-docs"
 
-# Makes Aux links open in a new tab. Default is false
+# 보조 링크를 새 탭에서 열기. 기본값은 false입니다
 aux_links_new_tab: false
 
-# Enable or disable the side/mobile menu globally
-# Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
+# 전체적으로 사이드/모바일 메뉴 활성화 또는 비활성화
+# 네비게이션 메뉴는 페이지 변수 또는 minimal 레이아웃을 사용하여 선택적으로 활성화 또는 비활성화할 수도 있습니다
 nav_enabled: true
 
-# Sort order for navigation links
-# nav_sort: case_insensitive # default, equivalent to nil
-nav_sort: case_sensitive # Capital letters sorted before lowercase
+# 네비게이션 링크의 정렬 순서
+# nav_sort: case_insensitive # 기본값, nil과 동일
+nav_sort: case_sensitive # 대문자가 소문자보다 먼저 정렬됩니다
 
-# External navigation links
+# 외부 네비게이션 링크
 nav_external_links:
   - title: Just the Docs on GitHub
     url: https://github.com/just-the-docs/just-the-docs
 
-# Show navigation error report
-nav_error_report: true # default is false/nil.
+# 네비게이션 오류 보고 표시
+nav_error_report: true # 기본값은 false/nil입니다.
 
 liquid:
   error_mode: strict
   strict_filters: true
 
-# Footer content
-# appears at the bottom of every page's main content
+# 바닥글 콘텐츠
+# 모든 페이지의 주요 콘텐츠 하단에 나타납니다
 
-# Back to top link
+# 맨 위로 이동 링크
 back_to_top: true
-back_to_top_text: "Back to top"
+back_to_top_text: "맨 위로"
 
-footer_content: 'Copyright &copy; 2017-2026 Patrick Marsceill and Just the Docs contributors. Distributed by an <a href="https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt">MIT license.</a> <a href="https://www.netlify.com/">This site is powered by Netlify.</a>'
+footer_content: '저작권 &copy; 2017-2026 Patrick Marsceill and Just the Docs contributors. <a href="https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt">MIT 라이선스</a>로 배포됩니다. <a href="https://www.netlify.com/">본 사이트는 Netlify에서 제공합니다.</a>'
 
-# Footer last edited timestamp
-last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
-last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+# 바닥글 마지막 편집 타임스탬프
+last_edit_timestamp: true # 편집 시간 표시 또는 숨기기 - 페이지의 프론트매터에 `last_modified_date`가 정의되어야 합니다
+last_edit_time_format: "%Y년 %m월 %d일 %I:%M %p" # Ruby의 시간 형식을 사용합니다: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-# Footer "Edit this page on GitHub" link text
-gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
-gh_edit_branch: "main" # the branch that your docs is served from
-# gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+# 바닥글 "이 페이지를 GitHub에서 편집" 링크 텍스트
+gh_edit_link: true # 이 페이지를 편집 링크 표시 또는 숨기기
+gh_edit_link_text: "GitHub에서 이 페이지 편집"
+gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # 저장소의 GitHub URL
+gh_edit_branch: "main" # 문서를 제공하는 브랜치
+# gh_edit_source: docs # 파일이 생성된 소스
+gh_edit_view_mode: "tree" # "tree" 또는 "edit" - 사용자가 즉시 편집기로 이동하도록 합니다
 
-# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
+# 색상 스킴은 현재 "dark", "light"/nil(기본값) 또는 정의한 커스텀 스킴만 지원합니다
 color_scheme: nil
 
-# When commented out, callouts_level defaults to quiet for the light scheme, and loud for dark
-# callouts_level: quiet # or loud
+# 주석 처리하면 callouts_level이 light 스킴에서는 quiet, dark 스킴에서는 loud로 기본 설정됩니다
+# callouts_level: quiet # 또는 loud
 callouts:
   highlight:
     color: yellow
@@ -181,11 +183,11 @@ callouts:
     title: Warning
     color: red
 
-# Google Analytics Tracking (optional)
-# Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
-# Note: the main Just the Docs site does *not* use Google Analytics.
+# Google Analytics 추적 (선택사항)
+# 추적 ID 문자열의 CSV를 지원합니다 (예: "UA-1234567-89,G-1AB234CDE5")
+# 참고: 주 Just the Docs 사이트는 Google Analytics를 사용하지 않습니다.
 # ga_tracking: UA-2709176-10,G-5FG1HLH3XQ
-# ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
+# ga_tracking_anonymize_ip: true # GDPR 준수 Google Analytics 설정 사용 (기본값: true/nil)
 
 plugins:
   - jekyll-seo-tag
