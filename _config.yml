@@ -16,7 +16,7 @@
 lang: en-US
 title: Just the Docs
 description: A Jekyll theme for documentation
-baseurl: "" # 로컬 개발용
+baseurl: "/just-the-docs" # GitHub Pages 프로젝트 사이트용
 url: "https://sunfish-commits.github.io" # GitHub Pages 사용자/조직 도메인
 repository: sunfish-commits/just-the-docs # github-metadata용
 
