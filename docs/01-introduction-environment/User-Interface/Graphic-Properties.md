@@ -14,7 +14,9 @@ Solid, Surface, Wireframe등 다양한 요소들의 그래픽 속성을 변경 �
 
 A. Toolbar를 이용하는 방법
 
+
 ![graphic-Properties_002]({{ site.baseurl }}/images/graphic-Properties/graphic-Properties_002.png){: width="100%"}
+
 
 Graphic Properties에서 변경할 수 있는 항목 예:
 

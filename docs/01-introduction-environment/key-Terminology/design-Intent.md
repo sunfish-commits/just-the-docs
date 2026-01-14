@@ -1,6 +1,6 @@
 ---
 title: 설계 의도
-parent: 핵심 용어 정리
+parent: 용어 정리
 nav_order: 3
 ---
 

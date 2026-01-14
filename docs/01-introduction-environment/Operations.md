@@ -1,6 +1,6 @@
 ---
 title: 조작법
-parent: 1장 카티아 소개
+parent: 1.1 카티아 소개
 nav_order: 4
 ---
 

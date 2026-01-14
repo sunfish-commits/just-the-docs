@@ -1,6 +1,6 @@
 ---
 title: 모델링의 표현 방식
-parent: 핵심 용어 정리
+parent: 용어 정리
 nav_order: 2
 ---
 
