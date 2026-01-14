@@ -4,7 +4,7 @@ parent: 핵심 용어 정리
 nav_order: 1
 ---
 
-### Feature
+# Feature
 
 Feature는 부품을 구성하기 위해 사용하는 기하학적 요소를 의미합니다.
 

@@ -4,7 +4,7 @@ parent: 핵심 용어 정리
 nav_order: 4
 ---
 
-### Parametric
+# Parametric
 
 Feature는 제어 가능한 Dimension(치수)과 Relation(관계)을 가지고 있으며, 이러한 요소를 Parameter라고 합니다.
 

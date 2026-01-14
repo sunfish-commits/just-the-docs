@@ -4,7 +4,7 @@ parent: 핵심 용어 정리
 nav_order: 2
 ---
 
-### Solid / Wireframe / Surface 모델링
+# Solid / Wireframe / Surface 모델링
 
 디지털 환경에서 3차원 형상을 표현하는 다양한 모델링 기법을 의미합니다.
 
