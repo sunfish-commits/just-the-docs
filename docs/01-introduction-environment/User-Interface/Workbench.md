@@ -6,14 +6,11 @@ nav_order: 4
 
 # Workbench
 
-CATIA에서 **Workbench**는 형상을 생성하거나 수정하는  
-기본 단위 요소를 의미합니다.
+Part를 생성하거나 특정 작업을 하기 위해서는 적절한 Workbench로 전환해야 하며, 위와 같은 방법으로 이동할 수 있습니다.
 
-> ※ 본 문서는 좌측 네비게이션 구조 테스트용 샘플입니다.  
-> 내용은 이후 교육 과정에 맞게 업데이트됩니다. 테스트
-
-
+1. 시작 메뉴에서 원하는 Workbench 선택
+2. File > New에서 특정 문서 유형 선택 시 해당 Workbench 자동 연결 
+3. 사용자 지정한 Workbench 아이콘을 통해 바로 진입
 
 
-
-
+![workbench_001]({{ site.baseurl }}/images/workbench/workbench_001.png){: width="100%"}
