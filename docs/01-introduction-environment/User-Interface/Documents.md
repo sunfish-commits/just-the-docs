@@ -5,15 +5,8 @@ nav_order: 5
 ---
 
 # CATIA 문서
-
-CATIA에서 **CATIA 문서**는 형상을 생성하거나 수정하는  
-기본 단위 요소를 의미합니다.
-
-> ※ 본 문서는 좌측 네비게이션 구조 테스트용 샘플입니다.  
-> 내용은 이후 교육 과정에 맞게 업데이트됩니다. 테스트
+해당 Workbench는 다음과 같은 확장자를 사용하며, Geometry를 저장하는 문서는 오른쪽의 화면과 같이 구성 됩니다. 
 
 
-
-
-
+![documents_001]({{ site.baseurl }}/images/documents/documents_001.png){: width="100%"}
 

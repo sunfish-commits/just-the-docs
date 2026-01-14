@@ -4,16 +4,11 @@ parent: 사용자 화면
 nav_order: 8
 ---
 
-# Specification Tree
+# Specification Tree 란?
 
-CATIA에서 **Specification Tree**는 형상을 생성하거나 수정하는  
-기본 단위 요소를 의미합니다.
+Specification Tree는 CATIA의 Feature, 모델링 순서 및 정보를 관리하는 구조적 Layer 공간입니다.
 
-> ※ 본 문서는 좌측 네비게이션 구조 테스트용 샘플입니다.  
-> 내용은 이후 교육 과정에 맞게 업데이트됩니다. 테스트
+- Specification Tree 사용 방법
 
 
-
-
-
-
+    ![specification-tree_001]({{ site.baseurl }}/images/specification-tree/specification-tree_001.png){: width="100%"}

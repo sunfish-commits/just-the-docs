@@ -6,14 +6,9 @@ nav_order: 7
 
 # Compass
 
-CATIA에서 **Compass**는 형상을 생성하거나 수정하는  
-기본 단위 요소를 의미합니다.
-
-> ※ 본 문서는 좌측 네비게이션 구조 테스트용 샘플입니다.  
-> 내용은 이후 교육 과정에 맞게 업데이트됩니다. 테스트
+1. Compass는 3D 모델(특히 Assembly Design 및 Digital Mockup Workbench)에서 
+    물체를 물리적으로 이동·회전시키기 위해 사용하는 도구입니다.
+2. Compass는 기본적으로 XY Plane을 기준으로 움직이며, 회전 및 이동 방향을 제어할 수 있습니다.
 
 
-
-
-
-
+![compass_001]({{ site.baseurl }}/images/compass/compass_001.png){: width="100%"}
