@@ -4,7 +4,7 @@ parent: 사용자 화면
 nav_order: 1
 ---
 
-### 기본 환경 설명
+# 기본 환경 설명
 
 CATIA의 사용자 화면은 모델을 생성·관리하기 위한 주요 요소들로 구성되어 있으며, 
 
@@ -31,7 +31,7 @@ CATIA는 Windows 기반 응용 프로그램과 유사하게 동작하며, 다양
 
 Object Linking and Embedding을 통해 Excel 등의 데이터를  CATIA 모델과 연결할 수 있습니다.
 
-![Basic-Environment-Overview_003]({{ site.baseurl }}/images/Basic-Environment-Overview/Basic-Environment-Overview_003.png)
+![Basic-Environment-Overview_003]({{ site.baseurl }}/images/Basic-Environment-Overview/Basic-Environment-Overview_003.png){: width="60%"}
 
 
 **3. 한글 및 특수 문자 제한**
@@ -39,5 +39,5 @@ Object Linking and Embedding을 통해 Excel 등의 데이터를  CATIA 모델�
 - 파일 이름 저장 시 한글 미지원 → 영문 사용 권장 
 - ! @ # $ % ^ & * ( ) . , / 등의 특수문자는 사용을 권장하지 않음
 
-![Basic-Environment-Overview_004]({{ site.baseurl }}/images/Basic-Environment-Overview/Basic-Environment-Overview_004.png)
+![Basic-Environment-Overview_004]({{ site.baseurl }}/images/Basic-Environment-Overview/Basic-Environment-Overview_004.png){: width="20%"}
 
