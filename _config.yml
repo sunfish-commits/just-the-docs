@@ -16,9 +16,9 @@
 lang: en-US
 title: Just the Docs
 description: A Jekyll theme for documentation
-baseurl: "" # 사이트의 서브경로, 예: /blog
-url: "https://just-the-docs.com" # 사이트의 기본 호스트명 및 프로토콜, 예: http://example.com
-repository: just-the-docs/just-the-docs # github-metadata용
+baseurl: "" # 로컬 개발용
+url: "https://sunfish-commits.github.io" # GitHub Pages 사용자/조직 도메인
+repository: sunfish-commits/just-the-docs # github-metadata용
 
 permalink: pretty
 
