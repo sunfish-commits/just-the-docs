@@ -11,10 +11,10 @@ CATIA는 프랑스 Dassault Systèmes에서 개발·판매하는 3D CAD & PLM �
 
 CATIA는 설계 과정에서 발생하는 문제에 대한 다양한 솔루션과 방법을 제시합니다.
 
-![introduction_001]({{site.url}}/images/introduction/introduction_001.png)
+![introduction_001]({{ '/images/introduction/introduction_001.png' | relative_url }})
 
 
 
 ### CATIA 분야
 
-![introduction_002]({{site.url}}/images/introduction/introduction_002.png)
+![introduction_002]({{ '/images/introduction/introduction_002.png' | relative_url }})

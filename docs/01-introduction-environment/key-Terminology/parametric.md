@@ -14,4 +14,4 @@ Parameter는 Dimension과 Relation으로 구성됩니다.
 
 
 
-![parametric_001]({{site.url}}/images/parametric/parametric_001.png)
+![parametric_001]({{ '/images/parametric/parametric_001.png' | relative_url }})

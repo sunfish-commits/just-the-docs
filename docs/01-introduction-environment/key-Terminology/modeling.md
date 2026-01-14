@@ -10,7 +10,7 @@ nav_order: 2
 
 
 
-![Modeling_001]({{site.url}}/images/modeling/modeling_001.png)
+![Modeling_001]({{ '/images/modeling/modeling_001.png' | relative_url }})
 
 
 
