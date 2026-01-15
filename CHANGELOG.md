@@ -1,6 +1,7 @@
 ---
 title: CHANGELOG
 layout: default
+nav_exclude: true
 ---
 
 # CHANGELOG
@@ -178,7 +179,7 @@ Docs changes made since the latest release:
 
 ### Documentation
 
-- A [footnote]({% link docs/configuration.md %}#fn:js-disabled) in the configuration docs explains how disabling JavaScript affects the display of navigation links when browsing folded collections.
+- Disabling JavaScript affects the display of navigation links when browsing folded collections.
 - Invalid HTML has been removed from most documentation examples.
 
 ## v0.5.4 - 2023-07-04
