@@ -13,7 +13,7 @@ nav_order: 5
     [http://ps-2.kev009.com/CATIA-B18/CATIA_P3_default.htm](http://ps-2.kev009.com/CATIA-B18/CATIA_P3_default.htm)
 
 
-![help_001]({{ site.baseurl }}/images/01_1/05_help/help_001.png){: width="50%"}
+![help_001]({{ site.baseurl }}/images/01_1/05_help/help_001.png){: width="100%"}
 
 
 
@@ -22,5 +22,5 @@ nav_order: 5
 - Message Bar는 사용자가 선택한 Command(명령어)에 대해 필요한 정보를 안내하는 도움말 형태의 메시지를 화면 하단에 표시합니다.
 - Tool을 선택하면 Message Bar가 현재 단계에서 필요한 작업이나 선택 요소를 설명해줍니다.
 
-![help_002]({{ site.baseurl }}/images/01_1/05_help/help_002.png){: width="50%"}
+![help_002]({{ site.baseurl }}/images/01_1/05_help/help_002.png){: width="100%"}
  
