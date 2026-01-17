@@ -1,1 +1,25 @@
 // 사용자 정의 SCSS (또는 CSS) 코드를 여기에 작성합니다
+
+// 전체 레이아웃을 중앙 정렬
+@media (min-width: 50rem) {
+  .side-bar {
+    position: fixed !important;
+    left: calc(50% - 732px) !important;
+    width: 16.5rem !important;
+  }
+  
+  .main {
+    margin: 0 !important;
+    max-width: 1200px !important;
+    margin-left: calc(50% - 468px) !important;
+  }
+}
+
+// 메인 콘텐츠 영역 너비 확장
+.main-content-wrap {
+  max-width: 1200px !important;
+}
+
+.main-content {
+  max-width: 1200px !important;
+}

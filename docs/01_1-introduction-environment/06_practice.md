@@ -4,11 +4,24 @@ parent: 1.1 카티아 소개
 nav_order: 6
 ---
 
-# 실습
+![practice_001]({{ '/images/01_1/06_practice/practice_001.png' | relative_url }}){: width="100%"}
 
-이 장은 CATIA 교육 과정의 첫 단계로,  
-**CATIA를 처음 접하는 사용자를 위한 기본적인 이해를 목표**로 합니다.
+---
 
-본 장에서는 CATIA의 역할과 특징을 간략히 살펴보고,  
-이후 학습하게 될 모델링, 조립, 도면 작업을 이해하기 위한  
+![practice_002]({{ '/images/01_1/06_practice/practice_002.png' | relative_url }}){: width="100%"}
 
+---
+
+![practice_003]({{ '/images/01_1/06_practice/practice_003.png' | relative_url }}){: width="100%"}
+
+---
+
+![practice_004]({{ '/images/01_1/06_practice/practice_004.png' | relative_url }}){: width="100%"}
+
+---
+
+![practice_005]({{ '/images/01_1/06_practice/practice_005.png' | relative_url }}){: width="100%"}
+
+---
+
+![practice_006]({{ '/images/01_1/06_practice/practice_006.png' | relative_url }}){: width="100%"}
