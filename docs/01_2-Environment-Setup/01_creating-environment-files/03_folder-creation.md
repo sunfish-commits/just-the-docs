@@ -4,8 +4,7 @@ parent: 환경 파일 만들기
 nav_order: 3
 ---
 
-![Test3]({{ '/images/01_2/01_03_folder-creation/Test3.png' | relative_url }}){: width="100%"}
-
+![folder-creation_001](https://sbtnc918p.synology.me/Github/images_edu/01_2/01_03_folder-creation/folder-creation_001.png)
 
 
 

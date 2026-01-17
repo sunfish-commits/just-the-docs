@@ -4,5 +4,4 @@ parent: 용어 정리
 nav_order: 2
 ---
 
-![Modeling_001]({{ '/images/01_1/02_02_modeling/modeling_001.png' | relative_url }}){: width="100%"}
-
+![introduction_001](https://sbtnc918p.synology.me/Github/images_edu/01_1/02_02_modeling/modeling_001.png)

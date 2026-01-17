@@ -4,14 +4,7 @@ parent: 기본 사용자 정의
 nav_order: 3
 ---
 
-# 설계 의도
-
-CATIA에서 **설계 의도**는 형상을 생성하거나 수정하는  
-기본 단위 요소를 의미합니다.
-
-> ※ 본 문서는 좌측 네비게이션 구조 테스트용 샘플입니다.  
-> 내용은 이후 교육 과정에 맞게 업데이트됩니다. 테스트
-
+![toolbar_001](https://sbtnc918p.synology.me/Github/images_edu/01_2/02_03_toolbar/toolbar_001.png)
 
 
 

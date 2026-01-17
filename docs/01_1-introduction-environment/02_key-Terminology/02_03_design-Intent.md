@@ -4,4 +4,4 @@ parent: 용어 정리
 nav_order: 3
 ---
 
-![design-Intent_001]({{ '/images/01_1/02_03_design-Intent/design-Intent_001.png' | relative_url }}){: width="100%"}
+![introduction_001](https://sbtnc918p.synology.me/Github/images_edu/02_03_design-Intent/design-Intent_001.png)
