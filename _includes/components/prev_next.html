@@ -60,10 +60,10 @@ Resolution strategy:
   {%- if prev_url or next_url -%}
   <nav class="prev-next" aria-label="페이지 탐색">
   {%- if prev_url -%}
-    <a class="btn btn-outline prev" href="{{ prev_url | relative_url }}" aria-label="이전">{{ prev_title | default: '이전' }}</a>
+    <a class="btn btn-outline prev" href="{{ prev_url | relative_url }}" aria-label="이전 페이지">← 이전: {{ prev_title | default: '이전 페이지' }}</a>
   {%- endif -%}
   {%- if next_url -%}
-    <a class="btn btn-outline next" href="{{ next_url | relative_url }}" aria-label="다음">{{ next_title | default: '다음' }}</a>
+    <a class="btn btn-outline next" href="{{ next_url | relative_url }}" aria-label="다음 페이지">다음: {{ next_title | default: '다음 페이지' }} →</a>
   {%- endif -%}
   </nav>
   {%- endif -%}

@@ -1,8 +1,7 @@
 ---
 title: CATIA 문서
 parent: 사용자 화면
-grand_parent: 1.1 카티아 소개
-nav_order: 5
+nav_order: 12
 ---
 
 ![introduction_001](https://sbtnc918p.synology.me/Github/images_edu/01_1/03_05_documents/documents_001.png)

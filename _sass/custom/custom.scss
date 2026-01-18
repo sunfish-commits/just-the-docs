@@ -77,6 +77,24 @@
   margin-left: auto;   // 다음 버튼은 오른쪽 정렬
 }
 
+// Back to top link styles (same as prev-next)
+#back-to-top {
+  border: none !important;  // 프레임(테두리) 제거
+  background: none !important;  // 배경 제거
+  box-shadow: none !important;  // 그림자 제거
+  text-decoration: underline;  // 밑줄 추가
+  padding: 0.25rem 0 !important;  // 패딩 조정
+  
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
 // Site title: shrink and keep on one line
 .site-title {
   font-size: 0.95rem !important;

@@ -1,8 +1,7 @@
 ---
-title: 용어 정리
+title: 주요 용어
 parent: 1.1 카티아 소개
 nav_order: 2
-has_children: true
 ---
 
 ## 용어 정리
