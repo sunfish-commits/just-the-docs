@@ -1,0 +1,70 @@
+{%- comment -%}
+Prev/Next navigation component for Just the Docs pages.
+
+Resolution strategy:
+- Prefer explicit front matter overrides: `prev_link`, `next_link` (and optional `prev_title`, `next_title`).
+- Otherwise, compute sibling pages by matching `parent` and sorting by `nav_order`.
+{%- endcomment -%}
+
+{%- assign prev_url = page.prev_link -%}
+{%- assign next_url = page.next_link -%}
+{%- assign prev_title = page.prev_title -%}
+{%- assign next_title = page.next_title -%}
+
+{%- if prev_url == nil or next_url == nil -%}
+  {%- assign current_parent = page.parent -%}
+  {%- assign siblings = site.pages | where_exp: 'p', 'p.parent == current_parent' -%}
+  {%- assign siblings = siblings | sort: 'nav_order' -%}
+
+  {%- assign found_index = -1 -%}
+  {%- for p in siblings -%}
+    {%- if p.url == page.url -%}
+      {%- assign found_index = forloop.index0 -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if prev_url == nil and found_index > 0 -%}
+    {%- assign prev_index = found_index | minus: 1 -%}
+    {%- assign prev_page = siblings[prev_index] -%}
+    {%- assign prev_url = prev_page.url -%}
+    {%- assign prev_title = prev_title | default: prev_page.title -%}
+  {%- endif -%}
+
+  {%- assign last_index = siblings.size | minus: 1 -%}
+  {%- if next_url == nil and found_index >= 0 and found_index < last_index -%}
+    {%- assign next_index = found_index | plus: 1 -%}
+    {%- assign next_page = siblings[next_index] -%}
+    {%- assign next_url = next_page.url -%}
+    {%- assign next_title = next_title | default: next_page.title -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%}
+조건부 렌더링:
+1. 글로벌 비활성화 확인 (site.prev_next_enabled)
+2. 페이지 레벨 오버라이드 확인 (page.prev_next_enabled)
+3. 특정 섹션에서만 활성화하려면 page.prev_next_enabled를 사용
+{%- endcomment -%}
+
+{%- assign show_prev_next = true -%}
+
+{%- if site.prev_next_enabled == false -%}
+  {%- assign show_prev_next = false -%}
+{%- elsif page.prev_next_enabled == false -%}
+  {%- assign show_prev_next = false -%}
+{%- elsif page.has_children == true -%}
+  {%- assign show_prev_next = false -%}
+{%- endif -%}
+
+{%- if show_prev_next -%}
+  {%- if prev_url or next_url -%}
+  <nav class="prev-next" aria-label="페이지 탐색">
+  {%- if prev_url -%}
+    <a class="btn btn-outline prev" href="{{ prev_url | relative_url }}" aria-label="이전">{{ prev_title | default: '이전' }}</a>
+  {%- endif -%}
+  {%- if next_url -%}
+    <a class="btn btn-outline next" href="{{ next_url | relative_url }}" aria-label="다음">{{ next_title | default: '다음' }}</a>
+  {%- endif -%}
+  </nav>
+  {%- endif -%}
+{%- endif -%}

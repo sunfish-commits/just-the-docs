@@ -4,7 +4,32 @@
 <hr>
 <footer>
   {% if site.back_to_top %}
-    <p><a href="#top" id="back-to-top">{{ site.back_to_top_text }}</a></p>
+    <div class="d-flex" style="gap: 1rem; align-items: center;">
+      <div>
+        <a href="#top" id="back-to-top">{{ site.back_to_top_text }}</a>
+      </div>
+      
+      {%- assign doc_collection = site.pages | where_exp: 'page', 'page.collection == "docs" or page.path contains "docs/"' | sort: 'path' -%}
+      {%- assign current_index = -1 -%}
+      {%- for item in doc_collection -%}
+        {%- if item.path == page.path -%}
+          {%- assign current_index = forloop.index0 -%}
+        {%- endif -%}
+      {%- endfor -%}
+      
+      {%- if current_index > 0 -%}
+        {%- assign prev_index = current_index | minus: 1 -%}
+        {%- assign prev_page = doc_collection[prev_index] -%}
+        <a href="{{ prev_page.url | relative_url }}" id="prev-page"></a>
+      {%- endif -%}
+      
+      {%- assign last_index = doc_collection.size | minus: 1 -%}
+      {%- if current_index >= 0 and current_index < last_index -%}
+        {%- assign next_index = current_index | plus: 1 -%}
+        {%- assign next_page = doc_collection[next_index] -%}
+        <a href="{{ next_page.url | relative_url }}" id="next-page"></a>
+      {%- endif -%}
+    </div>
   {% endif %}
 
   {{ footer_custom }}

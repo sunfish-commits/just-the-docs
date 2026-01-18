@@ -1,5 +1,22 @@
 // 사용자 정의 SCSS (또는 CSS) 코드를 여기에 작성합니다
 
+// 로고 크기 조정 (테마의 기본 .site-logo 스타일 오버라이드)
+.site-logo {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  background-position: center !important;
+  background-size: contain !important;
+  flex-shrink: 0 !important;
+  margin-right: 0.5rem !important;
+}
+
+// 사이트 타이틀 텍스트의 수직 정렬 보정
+.site-title-text {
+  display: inline-block !important;
+  line-height: 2.5rem !important;
+  vertical-align: middle !important;
+}
+
 // 전체 레이아웃을 중앙 정렬
 @media (min-width: 50rem) {
   .side-bar {
@@ -22,4 +39,46 @@
 
 .main-content {
   max-width: 1200px !important;
+}
+
+// Prev/Next navigation styles
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.prev-next a.btn.btn-outline,
+.prev-next .prev,
+.prev-next .next {
+  min-width: 6rem;
+  border: none !important;  // 프레임(테두리) 제거
+  background: none !important;  // 배경 제거
+  box-shadow: none !important;  // 그림자 제거
+  text-decoration: underline;  // 밑줄 추가
+  padding: 0.25rem 0 !important;  // 패딩 조정
+  
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.prev-next .prev {
+  margin-right: auto;  // 이전 버튼은 왼쪽 정렬
+}
+
+.prev-next .next {
+  margin-left: auto;   // 다음 버튼은 오른쪽 정렬
+}
+
+// Site title: shrink and keep on one line
+.site-title {
+  font-size: 0.95rem !important;
+  white-space: nowrap !important;
 }

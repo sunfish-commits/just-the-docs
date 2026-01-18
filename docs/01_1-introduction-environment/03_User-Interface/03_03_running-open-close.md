@@ -1,6 +1,7 @@
 ---
 title: CATIA 실행 및 열기/닫기
 parent: 사용자 화면
+grand_parent: 1.1 카티아 소개
 nav_order: 3
 ---
 

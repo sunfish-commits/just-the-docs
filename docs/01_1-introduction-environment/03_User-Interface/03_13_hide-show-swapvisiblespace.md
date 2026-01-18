@@ -1,6 +1,7 @@
 ---
 title: Hide/Show , Swap Visible Space
 parent: 사용자 화면
+grand_parent: 1.1 카티아 소개
 nav_order: 13
 ---
 
