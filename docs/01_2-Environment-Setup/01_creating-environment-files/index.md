@@ -5,4 +5,3 @@ nav_order: 1
 has_children: true
 ---
 
-## CATIA 환경 파일 만들기
